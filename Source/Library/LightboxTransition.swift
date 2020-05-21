@@ -38,7 +38,7 @@ class LightboxTransition: UIPercentDrivenInteractiveTransition {
   // MARK: - Pan gesture recognizer
 
   @objc func handlePanGesture(_ gesture: UIPanGestureRecognizer) {
-    guard lightboxController?.dismissOnPan else {
+    guard lightboxController?.dismissOnPan ?? false else {
         return
     }
     
