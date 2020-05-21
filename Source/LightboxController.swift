@@ -119,6 +119,8 @@ open class LightboxController: UIViewController {
       }
     }
   }
+    
+  open var dismissOnPan: Bool = true
 
   open var spacing: CGFloat = 20 {
     didSet {
